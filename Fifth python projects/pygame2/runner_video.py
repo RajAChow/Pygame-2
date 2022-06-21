@@ -163,14 +163,14 @@ obstacle_group = pygame.sprite.Group()
 sky_surface = pygame.transform.scale(pygame.image.load(os.path.join("graphics", "Sky.png")), (800, 450)).convert()
 
 
-# naruto_floor 
+#This creates/displays the character sprite for the ground naruto 
 naruto_floor_frame_1 = pygame.transform.scale(pygame.image.load(os.path.join("graphics", "naruto_floor1.png")), (55, 80)).convert_alpha()
 naruto_floor_frame_2 = pygame.transform.scale(pygame.image.load(os.path.join("graphics", "naruto_floor2.png")), (55, 80)).convert_alpha()
 naruto_floor_frames = [naruto_floor_frame_1, naruto_floor_frame_2]
 naruto_floor_frame_index = 0
 naruto_floor_surf = naruto_floor_frames[naruto_floor_frame_index]
 
-# naruto_sky
+#This creates/displays the character sprite for the flying naurto 
 naruto_sky_frame1 = pygame.transform.scale(pygame.image.load(os.path.join("graphics", "naruto_sky1.png")), (55, 80)).convert_alpha()
 naruto_sky_frame2 = pygame.transform.scale(pygame.image.load(os.path.join("graphics", "naruto_sky2.png")), (55, 80)).convert_alpha()
 naruto_sky_frames = [naruto_sky_frame1, naruto_sky_frame2]
@@ -179,7 +179,7 @@ naruto_sky_surf = naruto_sky_frames[naruto_sky_frame_index]
 
 obstacle_rect_list = []
 
-
+#This creates/displays the character sprite for sasuke that can be used with the physics/gravity 
 player_walk_1 = pygame.transform.scale(pygame.image.load(os.path.join("graphics", "player_walk_1.png")), (55, 80)).convert_alpha()
 player_walk_2 = pygame.transform.scale(pygame.image.load(os.path.join("graphics", "player_walk_2.png")), (55, 80)).convert_alpha()
 player_walk = [player_walk_1,player_walk_2]
